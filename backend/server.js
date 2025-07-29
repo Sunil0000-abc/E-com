@@ -14,13 +14,19 @@ mongoose.connect(process.env.MONGO_URL)
   .then(() => console.log('MongoDB connected'))
   .catch((err) => console.error('MongoDB connection error:', err.message));
 
-app.use('/api/auth', router); // ✅ This sets the route prefix
+app.use('/api/auth', router);
 
 app.get('/', (req, res) => {
   res.send('Auth API is running');
 });
 
-const PORT = process.env.PORT || 5000;
-app.listen(PORT, () => {
-  console.log(`Server is running on ${PORT}`);
-});
+// ✅ Export app for Vercel:
+module.exports = app;
+
+// ✅ Optional: Localhost testing only
+if (!process.env.VERCEL) {
+  const PORT = process.env.PORT || 5000;
+  app.listen(PORT, () => {
+    console.log(`Server is running on port ${PORT}`);
+  });
+}
