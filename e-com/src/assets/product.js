@@ -6,6 +6,18 @@ import p4 from '../assets/product_19.png'
 import p5 from '../assets/product_34.png'
 import p6 from '../assets/product_21.png'
 import p7 from '../assets/product_22.png'
+import p8 from '../assets/cap1.jpg'
+
+import p9 from '../assets/cap2.jpg'
+import p10 from '../assets/cap3.jpg'
+import p11 from '../assets/cap4.jpg'
+
+import p12 from '../assets/cap5.jpg'
+import p13 from '../assets/cap6.jpg'
+import p14 from '../assets/cap7.jpg'
+
+
+
 
 
 
@@ -70,6 +82,62 @@ let all_product =[
     name: "Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket",
     category: "Jacket",
     image: jacket,
+    new_price: 85.0,
+    old_price: 120.5,
+  },
+  {
+    id: 9,
+    name: "Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket",
+    category: "Caps",
+    image: p8,
+    new_price: 85.0,
+    old_price: 120.5,
+  },
+  {
+    id: 10,
+    name: "Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket",
+    category: "Caps",
+    image: p9,
+    new_price: 85.0,
+    old_price: 120.5,
+  },
+  {
+    id: 11,
+    name: "Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket",
+    category: "Caps",
+    image: p10,
+    new_price: 85.0,
+    old_price: 120.5,
+  },
+  {
+    id: 12,
+    name: "Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket",
+    category: "Caps",
+    image: p11,
+    new_price: 85.0,
+    old_price: 120.5,
+  },
+  {
+    id: 13,
+    name: "Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket",
+    category: "Caps",
+    image: p12,
+    new_price: 85.0,
+    old_price: 120.5,
+  },
+  {
+    id: 14,
+    name: "Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket",
+    category: "Caps",
+    image: p13,
+    new_price: 85.0,
+    old_price: 120.5,
+  },
+  {
+    id: 115,
+    name: "Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket",
+    category: "Caps",
+    image: p14,
     new_price: 85.0,
     old_price: 120.5,
   },

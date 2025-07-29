@@ -7,7 +7,8 @@ import CategoryPage from "./page/catagoryPage";
 import ProductPage from "./page/productPage";
 import CartPage from "./page/cartPage";
 import Login from "./auth/login";
-import Signup from "./auth/signup";
+import Footer from "./component/footer";
+
 
 const App = () => {
   return (
@@ -19,8 +20,9 @@ const App = () => {
          <Route path="/product/:productId" element={<ProductPage/>} />
          <Route path="/cartPage" element={<CartPage/>}/>
          <Route path="/login" element={<Login/>}/>
-         <Route path="/signup" element={<Signup/>}/>
+
       </Routes>
+      <Footer/>
     </>
   );
 };

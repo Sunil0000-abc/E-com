@@ -8,8 +8,8 @@ import shirt from "../assets/tshirt.png"
 const Shopcatagory = () => {
   const categories = [
     { name: "Jacket", img:jacket },
-    { name: "Tsse", img: ""},
-    { name: "Caps", img: cap },
+    { name: "Caps", img:cap },
+    { name: "Tees", img: ""},
     { name: "Accessories", img: access},
     { name: "Limited", img: shirt},
   ];
