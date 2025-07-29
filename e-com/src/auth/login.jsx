@@ -27,11 +27,9 @@ const Auth = () => {
 
     try {
       let res;
-      const apiBase = "http://localhost:5000/api/auth";
-
       if (mode === "signup") {
 
-        res = await fetch("http://localhost:5000/api/auth/signup", {
+        res = await fetch("https://e-com-cm8n.vercel.app/api/auth/signup", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({
@@ -43,7 +41,7 @@ const Auth = () => {
         navigate("/login");
       } else if (mode === "login") {
         try {
-      const res = await fetch("http://localhost:5000/api/auth/login", {
+      const res = await fetch("https://e-com-cm8n.vercel.app/api/auth/login", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
@@ -67,13 +65,13 @@ const Auth = () => {
     }
   
       } else if (mode === "forgot") {
-        res = await fetch(`${apiBase}/forgot-password`, {
+        res = await fetch('https://e-com-cm8n.vercel.app/api/auth/forgot-password', {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({ email: formData.email }),
         });
       } else if (mode === "reset") {
-        res = await fetch(`${apiBase}/reset-password`, {
+        res = await fetch('https://e-com-cm8n.vercel.app/api/auth/reset-password', {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({
