@@ -16,7 +16,7 @@ const CartPage = () => {
     <div className="pt-24 px-6 max-w-4xl mx-auto">
       <h2 className="text-2xl font-bold mb-6">Shopping Cart</h2>
 
-      {/* 4.1 List of items */}
+      
       <div className="space-y-6">
         {cartItems.map((item, idx) => (
           <div key={idx} className="flex items-center gap-4 border-b pb-4">
@@ -32,7 +32,7 @@ const CartPage = () => {
                 ₹{item.new_price}
               </p>
 
-              {/* 4.2 Quantity Adjust */}
+             
               <div className="flex items-center gap-3 mt-2">
                 <button
                   onClick={() => decreaseQty(item.id, item.size)}
@@ -53,12 +53,12 @@ const CartPage = () => {
         ))}
       </div>
 
-      {/* 4.3 Subtotal */}
+     
       <div className="text-right mt-8 text-xl font-semibold">
         Subtotal: ₹{getTotalAmount().toFixed(2)}
       </div>
 
-      {/* 4.4 Checkout CTA */}
+      
       <div className="text-right mt-4">
         <button className="px-6 py-3 bg-black text-white rounded-lg hover:bg-gray-800 transition">
           Proceed to Checkout

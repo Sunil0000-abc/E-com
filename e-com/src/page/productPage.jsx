@@ -19,7 +19,7 @@ const ProductPage = () => {
       return;
     }
     addToCart(product, selectedSize);
-    navigate('/cartPage'); // optional: redirect to cart
+    navigate('/cartPage'); 
   };
 
   return (

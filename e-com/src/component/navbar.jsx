@@ -63,7 +63,7 @@ const Navbar = () => {
       } bg-transparent py-3`}
     >
       <div className="max-w-6xl mx-auto flex items-center justify-between px-4">
-        {/* Logo */}
+       
         <Link to="/">
           <div className="text-[#0f172a] text-2xl tracking-tight font-extrabold">
             <span className="mr-1 text-white">F1</span>
@@ -71,7 +71,7 @@ const Navbar = () => {
           </div>
         </Link>
 
-        {/* Desktop Navigation */}
+        
         <ul className="hidden md:flex gap-6 text-[#475569] text-[16px] font-medium">
           {links.map((link, index) => (
             <li key={index}>
@@ -85,7 +85,7 @@ const Navbar = () => {
           ))}
         </ul>
 
-        {/* Search Input (Desktop) */}
+       
         <div className="relative w-full max-w-sm hidden md:block">
           <input
             type="text"
@@ -95,7 +95,7 @@ const Navbar = () => {
           <FaSearch className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-500" />
         </div>
 
-        {/* Icons (Desktop) */}
+       
         <div className="hidden md:flex gap-4 text-[#475569] text-xl">
           <Link to="/cartPage">
             <div className="flex flex-col items-center justify-center">
@@ -128,7 +128,7 @@ const Navbar = () => {
           )}
         </div>
 
-        {/* Hamburger Icon (Mobile Only) */}
+        
         <div className="md:hidden">
           <button onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
             {mobileMenuOpen ? (
@@ -140,7 +140,6 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Mobile Menu */}
       <div
         className={`md:hidden px-4 overflow-hidden transition-all duration-300 ease-in-out bg-green-50 rounded-sm p-4${
           mobileMenuOpen
